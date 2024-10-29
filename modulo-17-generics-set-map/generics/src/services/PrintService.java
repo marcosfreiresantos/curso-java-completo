@@ -19,6 +19,7 @@ public class PrintService<T>{
     }
     
     public void print() {
+        System.out.print("[");
         if (!list.isEmpty()) {
             System.out.print(list.get(0));
         }
@@ -26,6 +27,6 @@ public class PrintService<T>{
         for (int i = 1; i < list.size(); i++) {
             System.out.print(", " + list.get(i));
         }
-        System.out.print("]");
+        System.out.println("]");
     }
 }
